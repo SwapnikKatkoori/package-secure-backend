@@ -29,4 +29,4 @@ io.on('connection', client => {
 
   client.on('disconnect', () => { console.log("Socket disconnected") });
 });
-server.listen(3100);
+server.listen(process.env.PORT || 5000);
