@@ -34,7 +34,7 @@ io.on('connection', client => {
 		var twilioClient = new twilio(user.account_sid, user.auth_token);
 		twilioClient.messages.create({
 	  	to: user.number,
-	  	from: user.trail,
+	  	from: user.trial,
 	  	body: 'Warning, there has been a theft in your neighborhood.'
 		});
 	}
